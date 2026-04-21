@@ -64,10 +64,13 @@ python Swap_emc.py
 ```
 
 4. When prompted, enter `61` or `69` to match your replacement southbridge revision.
-5. Output is written to `OUT/<ModelString_VersionString>/`:
+5. Output is written to
+   
+   - `OUT/<ModelString_VersionString>/`:
    - `<original_filename>.bin` — unmodified NOR dump
    - `patched_<original_filename>.bin` — NOR with swapped EMC firmware
-6. Optionally confirm deletion of the source dump from `IN/`.
+     
+7. Optionally confirm deletion of the source dump from `IN/`.
 
 ---
 

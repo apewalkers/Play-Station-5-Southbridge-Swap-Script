@@ -37,10 +37,15 @@ commonly referred to as **61** and **69** (matching their board-level identifier
 ## Directory Structure
 Swap_emc.py
 ├── IN/ # Place your PS5 NOR .BIN dumps here
+
 ├── OUT/ # Patched output written here (auto-created)
+
 ├── 61/
+
 │ └── 61.bin # EMC firmware for southbridge revision 61 (must be exactly 0x7E000 bytes)
+
 └── 69/
+
 └── 69.bin # EMC firmware for southbridge revision 69 (must be exactly 0x7E000 bytes)
 
 

@@ -7,7 +7,7 @@ specifically to swap the embedded **EMC / Southbridge (CXD90061GG)** & **EMC / S
 Useful when replacing a PS5 southbridge IC and needing to match the NOR firmware to the correct southbridge revision.
 
 ---
-⚠️ NOTE: The 61.bin is the EMC Firmware for "E1E 0001 0000 0004 13D0" (Exploitable with Symbrkrs/ PS5-uart https://github.com/symbrkrs/ps5-uart)
+⚠️ NOTE: The 61.bin is the EMC Firmware for "E1E 0001 0000 0004 13D0" but does not update the value read when UART command version is sent
 
 ## Background
 

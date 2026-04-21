@@ -1,12 +1,20 @@
 # Swap_emc — PS5 NOR Southbridge Firmware Patcher
 
-patching **PlayStation 5 NOR flash firmware** `.BIN` files, specifically to swap the embedded **EMC / Southbridge (CXD90061GG)** & **EMC / Southbridge (CXD90069GG)** firmware region. Useful when replacing a PS5 southbridge IC and needing to match the NOR firmware to the correct southbridge revision.
+patching **PlayStation 5 NOR flash firmware** `.BIN` files
+
+specifically to swap the embedded **EMC / Southbridge (CXD90061GG)** & **EMC / Southbridge (CXD90069GG)** firmware region. 
+
+Useful when replacing a PS5 southbridge IC and needing to match the NOR firmware to the correct southbridge revision.
+
 ---
 ⚠️ NOTE: The 61.bin is the EMC Firmware for 1.0.4 (Exploitable with Symbrkrs/ PS5-uart https://github.com/symbrkrs/ps5-uart)
 
 ## Background
 
-The PS5 NOR flash contains the EMC firmware used by the **CXD90061GG Southbridge** (also referred to as the EMC/Syscon). Two hardware revisions of this chip exist, commonly referred to as **61** and **69** (matching their board-level identifiers). When replacing a southbridge, the NOR firmware region must match the installed chip revision — this tool automates that swap.
+The PS5 NOR flash contains the EMC firmware used by the **CXD90061GG Southbridge** (also referred to as the EMC/Syscon). Two hardware revisions of this chip exist, 
+
+commonly referred to as **61** and **69** (matching their board-level identifiers). When replacing a southbridge, the NOR firmware region must match the installed chip revision — this tool automates that swap.
+
 ---
 
 ## Features
@@ -17,11 +25,13 @@ The PS5 NOR flash contains the EMC firmware used by the **CXD90061GG Southbridge
 - Extracts the mainboard serial and model strings from the NOR to auto-name output folders
 - Saves a copy of the original alongside the patched file
 - Optional cleanup — delete the source file from `IN/` after patching
+  
 ---
 
 ## Requirements
 
 - Python 3.6+
+  
 ---
 
 ## Directory Structure
